@@ -1,11 +1,11 @@
 {
-  "name": "hexo-github-card",
+  "name": "hexo-github-card-customize",
   "version": "1.0.3",
   "description": "Display a card for GitHub profile and repo in your hexo blog. Implemented with Github-cards.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gisonrg/hexo-github-card.git"
+    "url": "https://github.com/l552121229/hexo-github-card-customize.git"
   },
   "keywords": [
     "website",
@@ -15,9 +15,9 @@
     "card"
   ],
   "author": {
-    "name": "Jason Jiang",
-    "email": "gisonrg@gmail.com",
-    "url": "https://gisonrg.me"
+    "name": "l552121229",
+    "email": "l552121229@gmail.com",
+    "url": "https://hexo.lilis.xin"
   },
   "license": "MIT",
   "engines": {
