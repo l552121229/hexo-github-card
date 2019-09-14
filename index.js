@@ -33,14 +33,15 @@ hexo.extend.tag.register(GITHUB_CARD_TAG_NAME, (args) => {
     argsObj[current[0]] = current[1];
   });
 
-  const user = argsObj.user,
-    repo = argsObj.repo,
-    width = argsObj.width || '400',
-    height = argsObj.height || '200',
-    theme = argsObj.theme || 'default',
-    client_id = argsObj.client_id || '',
-    client_secret = argsObj.client_secret || '',
-    align = argsObj.align || 'center';
+const user = argsObj.user,
+      repo = argsObj.repo,
+      width = argsObj.width || hexo.config.github_card.width || '100%',
+      height = argsObj.height || hexo.config.github_card.height || '200',
+      theme = argsObj.theme || hexo.config.github_card.theme || 'default',
+      client_id = argsObj.client_id || hexo.config.github_card.client_id || '',
+      client_secret = argsObj.client_secret || hexo.config.github_card.client_secret || '',
+      align = argsObj.align || hexo.config.github_card.align || 'center',
+      target = argsObj.align || hexo.config.github_card.target || 'blank';
 
   const payload = {
     user,
@@ -51,6 +52,7 @@ hexo.extend.tag.register(GITHUB_CARD_TAG_NAME, (args) => {
     client_id,
     client_secret,
     style: `text-align: ${align}`,
+    target: target
   };
 
   return new Promise((resolve, reject) => {
