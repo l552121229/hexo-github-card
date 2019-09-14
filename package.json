@@ -1,7 +1,6 @@
 {
   "name": "hexo-github-card-customize",
-  "version": "1.0.3",
-  "description": "Display a card for GitHub profile and repo in your hexo blog. Implemented with Github-cards.",
+  "version": "1.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -14,11 +13,7 @@
     "github",
     "card"
   ],
-  "author": {
-    "name": "l552121229",
-    "email": "l552121229@gmail.com",
-    "url": "https://hexo.lilis.xin"
-  },
+  "author": "552121229l <552121229l@gmail.com>",
   "license": "MIT",
   "engines": {
     "hexo": ">= 3.0.0"
